@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
  
 
   s.name         = "LBLBaseSupport"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "LBLBaseSupport."
 
   s.description  = <<-DESC
@@ -17,21 +17,27 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "李保龙" => "15837883627@163.com" }
   
-  s.platform     = :ios, "8.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
-
-
   s.source       = { :git => "https://github.com/Leebaolong/LBLBaseSupport.git", :tag => "#{s.version}" }
 
+  s.requires_arc = true
 
-  s.source_files  = "LBLBaseSupport", "LBLBaseSupport/**/*.{h,m}"
+  s.ios.deployment_target = '8.0'
 
+  s.source_files = 'LBLBaseSupport/Classes/LBLBaseSupportHeader.h'
+  s.public_header_files = 'LBLBaseSupport/Classes/LBLBaseSupportHeader.h'
+
+  s.subspec 'Category' do |cat|
+     cat.source_files = 'LBLBaseSupport/Classes/Category/*.{h,m}'
+     cat.public_header_files = 'LBLBaseSupport/Classes/Category/*.h'
+     s.dependency 'SDWebImage', '~> 3.7.5'
+  end
+
+ s.subspec 'Tool' do |to|
+    to.source_files = 'LBLBaseSupport/Classes/Tool/*.{h,m}'
+    to.public_header_files = 'LBLBaseSupport/Classes/Tool/*.h'
+  end
+
+  
   s.requires_arc = true
 
   end
