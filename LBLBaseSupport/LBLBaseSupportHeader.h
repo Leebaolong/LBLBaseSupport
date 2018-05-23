@@ -9,5 +9,8 @@
 #ifndef LBLBaseSupportHeader_h
 #define LBLBaseSupportHeader_h
 
+#import "BaseButton.h"
+#import "BaseModel.h"
+
 
 #endif /* LBLBaseSupportHeader_h */
