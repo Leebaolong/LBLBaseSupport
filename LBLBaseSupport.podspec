@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LBLBaseSupport"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "LBLBaseSupport."
 
   # This description is used to generate tags and improve search results.
@@ -89,12 +89,13 @@ Pod::Spec.new do |s|
   #  giving a folder will include any swift, h, m, mm, c & cpp files.
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
-  #
+  #    s.source_files  = "Classes", "Classes/**/*.{h,m}"
 
-  s.source_files  = 'LBLBaseSupport/**/*.{h,m}'
+
+  s.source_files  = "LBLBaseSupport", "LBLBaseSupport/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "LBLBaseSupport/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

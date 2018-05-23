@@ -32,6 +32,7 @@
 		BB20158A20B50E030076CF9C /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		BB2015B320B545170076CF9C /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
 		BB2015B420B545170076CF9C /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		BB2015B620B5486C0076CF9C /* LBLBaseHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBLBaseHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +82,9 @@
 		BB20158820B50DC70076CF9C /* LBLBaseSupport */ = {
 			isa = PBXGroup;
 			children = (
+				BB2015B620B5486C0076CF9C /* LBLBaseHeader.h */,
 				BB2015AE20B5442B0076CF9C /* UIKit */,
-				BB20158920B50E030076CF9C /* BaseModel.h */,
-				BB20158A20B50E030076CF9C /* BaseModel.m */,
+				BB2015B720B548960076CF9C /* Category */,
 			);
 			path = LBLBaseSupport;
 			sourceTree = "<group>";
@@ -95,6 +96,15 @@
 				BB2015B320B545170076CF9C /* BaseButton.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BB2015B720B548960076CF9C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BB20158920B50E030076CF9C /* BaseModel.h */,
+				BB20158A20B50E030076CF9C /* BaseModel.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
