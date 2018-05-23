@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LBLBaseSupport"
-  s.version      = "0.0.3"
+  s.version      = "1.0.0"
   s.summary      = "LBLBaseSupport."
 
   # This description is used to generate tags and improve search results.
@@ -92,11 +92,11 @@ Pod::Spec.new do |s|
   #    s.source_files  = "Classes", "Classes/**/*.{h,m}"
 
 
-  s.source_files  = "LBLBaseSupport", "LBLBaseSupport/**/*.{h,m}"
+  # s.source_files  = "LBLBaseSupport", "LBLBaseSupport/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "LBLBaseSupport/**/*.h"
-
+  s.public_header_files = 'LBLBaseSupport/LBLBaseSupportHeader.h'
+   s.source_files = 'LBLBaseSupport/**/*.{h,m}'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
