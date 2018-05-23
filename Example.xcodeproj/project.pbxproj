@@ -14,6 +14,7 @@
 		BB20157F20B50DA40076CF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB20157D20B50DA40076CF9C /* LaunchScreen.storyboard */; };
 		BB20158220B50DA40076CF9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB20158120B50DA40076CF9C /* main.m */; };
 		BB20158B20B50E030076CF9C /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB20158A20B50E030076CF9C /* BaseModel.m */; };
+		BB2015B520B545170076CF9C /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2015B320B545170076CF9C /* BaseButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		BB20158120B50DA40076CF9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB20158920B50E030076CF9C /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		BB20158A20B50E030076CF9C /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		BB2015B320B545170076CF9C /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		BB2015B420B545170076CF9C /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +81,20 @@
 		BB20158820B50DC70076CF9C /* LBLBaseSupport */ = {
 			isa = PBXGroup;
 			children = (
+				BB2015AE20B5442B0076CF9C /* UIKit */,
 				BB20158920B50E030076CF9C /* BaseModel.h */,
 				BB20158A20B50E030076CF9C /* BaseModel.m */,
 			);
 			path = LBLBaseSupport;
+			sourceTree = "<group>";
+		};
+		BB2015AE20B5442B0076CF9C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB2015B420B545170076CF9C /* BaseButton.h */,
+				BB2015B320B545170076CF9C /* BaseButton.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +170,7 @@
 				BB20157720B50DA30076CF9C /* ViewController.m in Sources */,
 				BB20158220B50DA40076CF9C /* main.m in Sources */,
 				BB20158B20B50E030076CF9C /* BaseModel.m in Sources */,
+				BB2015B520B545170076CF9C /* BaseButton.m in Sources */,
 				BB20157420B50DA30076CF9C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
