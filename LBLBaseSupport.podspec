@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
  
 
   s.name         = "LBLBaseSupport"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "LBLBaseSupport."
 
   s.description  = <<-DESC
@@ -23,18 +23,18 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LBLBaseSupport/Classes/LBLBaseSupportHeader.h'
-  s.public_header_files = 'LBLBaseSupport/Classes/LBLBaseSupportHeader.h'
+  s.source_files = 'LBLBaseSupport/LBLBaseSupportHeader.h'
+  s.public_header_files = 'LBLBaseSupport/LBLBaseSupportHeader.h'
 
   s.subspec 'Category' do |cat|
-     cat.source_files = 'LBLBaseSupport/Classes/Category/*.{h,m}'
-     cat.public_header_files = 'LBLBaseSupport/Classes/Category/*.h'
-     s.dependency 'SDWebImage', '~> 3.7.5'
+     cat.source_files = 'LBLBaseSupport/Category/*.{h,m}'
+     cat.public_header_files = 'LBLBaseSupport/Category/*.h'
+     #s.dependency 'SDWebImage', '~> 3.7.5'
   end
 
  s.subspec 'Tool' do |to|
-    to.source_files = 'LBLBaseSupport/Classes/Tool/*.{h,m}'
-    to.public_header_files = 'LBLBaseSupport/Classes/Tool/*.h'
+    to.source_files = 'LBLBaseSupport/Tool/*.{h,m}'
+    to.public_header_files = 'LBLBaseSupport/Tool/*.h'
   end
 
   

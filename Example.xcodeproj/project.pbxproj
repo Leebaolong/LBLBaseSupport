@@ -82,9 +82,9 @@
 		BB20158820B50DC70076CF9C /* LBLBaseSupport */ = {
 			isa = PBXGroup;
 			children = (
+				BB2015B820B567C30076CF9C /* LBLBaseSupportHeader.h */,
 				BB2015BF20B572830076CF9C /* Category */,
 				BB2015C020B572B30076CF9C /* Tool */,
-				BB2015B820B567C30076CF9C /* LBLBaseSupportHeader.h */,
 			);
 			path = LBLBaseSupport;
 			sourceTree = "<group>";
